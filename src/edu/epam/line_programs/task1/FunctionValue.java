@@ -1,4 +1,6 @@
-package edu.epam.Line_programs.task1;
+package edu.epam.line_programs.task1;
+
+//  Найдите значение функции: z = ( (a – 3 ) * b / 2) + c
 
 import java.util.*;
 
@@ -6,7 +8,7 @@ public class FunctionValue {
 
     public static void main(String[] args) {
 
-        double z;
+        double result;
         double[] param = new double[3];
         char[] val = {'A', 'B', 'C'};
 
@@ -20,8 +22,8 @@ public class FunctionValue {
                     param[i] = input.nextDouble();
                 }
 
-                z = ((param[0] - 3) * param[1] / 2) + (param[2]);
-                System.out.println("Function value is " + z);
+                result = ((param[0] - 3) * param[1] / 2) + (param[2]);
+                System.out.println("Function value is " + result);
 
             } catch (InputMismatchException e) {
 
